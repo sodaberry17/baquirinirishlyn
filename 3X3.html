@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Gallery</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #96878e 0%, #884b5f 100%);
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #f8f8f8;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }k
+
+        h1 {
+            color: #f8f8f8;
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 200px);
+            grid-template-rows: repeat(3, 200px);
+            gap: 10px;
+            padding: 10px;
+            border-radius: 15px;
+            overflow: hidden;
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .container img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #6a4c61;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <a href="activitybaquirin.html" class="back-button">Back</a>
+    <h1>3X3 IMAGE GRID</h1>
+    <div class="container">
+        <img src="https://i.pinimg.com/736x/86/d1/ec/86d1ec3f67d9a13b748033a97d767c57.jpg" alt="Image 1">
+        <img src="https://i.pinimg.com/736x/8d/6a/05/8d6a05ddce2d114a969859ada92c072c.jpg" alt="Image 2">
+        <img src="https://i.pinimg.com/736x/21/d6/08/21d608d9d98ac321c79cf8dfe6f75744.jpg" alt="Image 3">
+        <img src="https://i.pinimg.com/736x/08/33/ba/0833ba728f1299019c134cbf9d822b51.jpg" alt="Image 4">
+        <img src="https://i.pinimg.com/736x/e5/59/10/e55910a265e88ec59ad807f35263c310.jpg" alt="Image 5">
+        <img src="https://i.pinimg.com/736x/35/61/7b/35617bf9f7cc8f92c502199c64398e80.jpg" alt="Image 6">
+        <img src="https://i.pinimg.com/736x/64/ab/21/64ab210c8fc43a576d142868aa6aa2a3.jpg" alt="Image 7">
+        <img src="https://i.pinimg.com/736x/14/61/3f/14613f3955c8453486410a6d32908983.jpg" alt="Image 8">
+        <img src="https://i.pinimg.com/736x/68/67/08/686708ff8f676add18e434d480f276a4.jpg" alt="Image 9">
+    </div>
+</body>
+</html>

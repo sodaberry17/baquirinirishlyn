@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First HTML Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: linear-gradient(to right, #96878e 0%, #884b5f 100%);
+            color: #333;
+        }
+        h1, h2 {
+            color: #ffffff;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        img {
+            width: 100px; /* Set a specific width */
+            height: 100px; /* Set a specific height */
+            border-radius: 50%; /* Make the image circular */
+            object-fit: cover; /* Ensure the image covers the container */
+            margin: 20px 0;
+        }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ul, ol {
+            text-align: left;
+            margin: 0 auto;
+            padding-left: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #6a4c61;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <a href="activitybaquirin.html" class="back-button">Back</a>
+    <div class="container">
+        <h1>Welcome to My Webpage</h1>
+        <p>This is my first HTML page.</p>
+
+        <h2>Links and Images</h2>
+        <p>Visit <a href="activitybaquirin.html">Example Website</a> for more information.</p>
+        <img src="https://i.pinimg.com/736x/86/d1/ec/86d1ec3f67d9a13b748033a97d767c57.jpg" alt="Placeholder Image">
+
+        <h2>My Favorite Fruits</h2>
+        <ul>
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Cherry</li>
+        </ul>
+
+        <h2>Steps to Make a Sandwich</h2>
+        <ol>
+            <li>Get bread</li>
+            <li>Add peanut butter</li>
+            <li>Add Jelly</li>
+            <li>Put the slices together</li>
+        </ol>
+        
+        <h2>Student Grades</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Subject</th>
+                <th>Grade</th>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Math</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>Jane</td>
+                <td>Science</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>Jim</td>
+                <td>History</td>
+                <td>A-</td>
+            </tr>
+        </table>
+
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
